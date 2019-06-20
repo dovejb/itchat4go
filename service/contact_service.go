@@ -3,10 +3,10 @@ package service
 import (
 	"encoding/json"
 	"fmt"
+	e "github.com/dovejb/itchat4go/enum"
+	m "github.com/dovejb/itchat4go/model"
+	t "github.com/dovejb/itchat4go/tools"
 	"io/ioutil"
-	e "itchat4go/enum"
-	m "itchat4go/model"
-	t "itchat4go/tools"
 	"net/http"
 	"net/url"
 	"regexp"

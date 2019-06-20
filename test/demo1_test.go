@@ -2,9 +2,9 @@ package test
 
 import (
 	"fmt"
-	e "itchat4go/enum"
-	m "itchat4go/model"
-	s "itchat4go/service"
+	e "github.com/dovejb/itchat4go/enum"
+	m "github.com/dovejb/itchat4go/model"
+	s "github.com/dovejb/itchat4go/service"
 	"os/exec"
 	"regexp"
 	"testing"

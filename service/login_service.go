@@ -5,11 +5,11 @@ import (
 	"encoding/xml"
 	"errors"
 	"fmt"
+	e "github.com/dovejb/itchat4go/enum" /* 取个别名 */
+	m "github.com/dovejb/itchat4go/model"
+	t "github.com/dovejb/itchat4go/tools"
 	"io"
 	"io/ioutil"
-	e "itchat4go/enum" /* 取个别名 */
-	m "itchat4go/model"
-	t "itchat4go/tools"
 	"net/http"
 	"os"
 	"regexp"
@@ -57,7 +57,7 @@ func DownloadImagIntoDir(url string, dirPath string) error {
 	//检查并创建临时目录
 	if !isDirExist(dirPath) {
 		os.Mkdir(dirPath, 0755)
-		fmt.Println("dir %s created", dirPath)
+		fmt.Printf("dir %s created\n", dirPath)
 	}
 
 	resp, err := http.Get(url)
